@@ -41,7 +41,7 @@ class Home extends Component{
         console.log(this.state.option)
         this.setState({option})
       })
-  }
+    }
   render(){
     return(
       <Card className='home-box'>
