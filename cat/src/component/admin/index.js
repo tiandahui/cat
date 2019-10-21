@@ -1,12 +1,12 @@
 import React,{Component} from 'react'
 import './index.less'
-
+import CustomNav from '../customNav'
 class Admin extends Component{
   render(){
     return(
       <div className='admin'>
         <div className='admin-nav'>
-
+          <CustomNav></CustomNav>
         </div>
         <div className='admin-content'>
           <div>
