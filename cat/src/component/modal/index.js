@@ -1,6 +1,7 @@
 import React,{Component,Fragment} from 'react'
 import {Card} from 'antd'
 import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
 import './index.less'
 
 class  TokenModal extends Component{
@@ -13,7 +14,9 @@ class  TokenModal extends Component{
         <div className='token-model'>
           <Card title='token失效'>
             token缺失，请重新登录
-            <button>去登陆</button>
+            <button onClick={()=>{
+              this.props.history.push('/login')
+            }}>去登陆</button>
           </Card>
         </div>}
       </Fragment>
@@ -23,4 +26,4 @@ class  TokenModal extends Component{
   }
 }
 
-export default connect(state=>state)(TokenModal)
+export default connect(state=>state)(withRouter(TokenModal))

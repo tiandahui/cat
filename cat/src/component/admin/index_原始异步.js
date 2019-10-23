@@ -8,7 +8,13 @@ import './index.less'
 
 class Admin extends Component{
   componentDidMount(){
-    this.props.changeTokenModalAsync()
+    setTimeout(()=>{
+      if(false){
+
+      }else{
+        this.props.changeTokenModal(true)
+      }
+    },1000)
   }
   render(){
     console.log('admin',this)
