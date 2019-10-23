@@ -3,12 +3,12 @@ import {withRouter} from 'react-router-dom'
 import { Menu, Icon } from 'antd'
 let navData = [
   {name:'首页',path:'/admin/home'},
-  {name:'设置',path:'/setting'},
+  {name:'设置',path:'/admin/setting'},
   {name:'用户管理',
-    path:'/user',
+    path:'/admin/user',
     children:[
-      {name:'用户列表',path:'/user/list'},
-      {name:'用户删除',path:'/user/del'}
+      {name:'用户列表',path:'/admin/user/list'},
+      {name:'用户删除',path:'/admin/user/del'}
     ]
   }
 ]

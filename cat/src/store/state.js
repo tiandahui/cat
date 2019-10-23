@@ -1,3 +1,3 @@
 export default{
-  tokenModal:true
+  tokenModal:false
 }
